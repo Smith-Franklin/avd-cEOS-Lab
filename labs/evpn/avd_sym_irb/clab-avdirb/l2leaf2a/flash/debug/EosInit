@@ -1,0 +1,4 @@
+2025-02-15 09:11:49 Aaa.sh: start
+2025-02-15 09:11:50 Aaa.sh: AAA_WARMUP_CMD='wfw -v -t 3600 Aaa Ssh ConfigAgent'
+2025-02-15 09:11:50 Aaa.sh: warmup command started
+waiting for agent localhost:ar.Sysdb to start ...ok
