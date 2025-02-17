@@ -1,0 +1,747 @@
+{
+  "name": "avdirb",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "ceos_clab",
+        "bridge": "br-636c0554bef3",
+        "ipv4-subnet": "172.100.100.0/24",
+        "ipv4-gw": "172.100.100.1",
+        "ipv6-subnet": "2001:172:100:100::/80",
+        "ipv6-gw": "2001:172:100:100::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "client1": {
+      "index": "0",
+      "shortname": "client1",
+      "longname": "clab-avdirb-client1",
+      "fqdn": "client1.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/client1",
+      "kind": "linux",
+      "image": "alpine-host",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.100.100.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::2",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/client1",
+        "clab-node-name": "client1",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client2": {
+      "index": "1",
+      "shortname": "client2",
+      "longname": "clab-avdirb-client2",
+      "fqdn": "client2.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/client2",
+      "kind": "linux",
+      "image": "alpine-host",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.100.100.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::5",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/client2",
+        "clab-node-name": "client2",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client3": {
+      "index": "2",
+      "shortname": "client3",
+      "longname": "clab-avdirb-client3",
+      "fqdn": "client3.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/client3",
+      "kind": "linux",
+      "image": "alpine-host",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.100.100.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::4",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/client3",
+        "clab-node-name": "client3",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client4": {
+      "index": "3",
+      "shortname": "client4",
+      "longname": "clab-avdirb-client4",
+      "fqdn": "client4.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/client4",
+      "kind": "linux",
+      "image": "alpine-host",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.100.100.13",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::8",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/client4",
+        "clab-node-name": "client4",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "l2leaf2a": {
+      "index": "4",
+      "shortname": "l2leaf2a",
+      "longname": "clab-avdirb-l2leaf2a",
+      "fqdn": "l2leaf2a.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/l2leaf2a",
+      "kind": "ceos",
+      "image": "ceosimage:4.33.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.100.100.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::7",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "00:1c:73:37:6b:f7",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/l2leaf2a",
+        "clab-node-name": "l2leaf2a",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "l2leaf2b": {
+      "index": "5",
+      "shortname": "l2leaf2b",
+      "longname": "clab-avdirb-l2leaf2b",
+      "fqdn": "l2leaf2b.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/l2leaf2b",
+      "kind": "ceos",
+      "image": "ceosimage:4.33.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.100.100.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::b",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "00:1c:73:ec:9e:2b",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/l2leaf2b",
+        "clab-node-name": "l2leaf2b",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "leaf1a": {
+      "index": "6",
+      "shortname": "leaf1a",
+      "longname": "clab-avdirb-leaf1a",
+      "fqdn": "leaf1a.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/leaf1a",
+      "kind": "ceos",
+      "image": "ceosimage:4.33.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.100.100.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::c",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "00:1c:73:49:45:ef",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/leaf1a",
+        "clab-node-name": "leaf1a",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "leaf1b": {
+      "index": "7",
+      "shortname": "leaf1b",
+      "longname": "clab-avdirb-leaf1b",
+      "fqdn": "leaf1b.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/leaf1b",
+      "kind": "ceos",
+      "image": "ceosimage:4.33.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.100.100.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::3",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "00:1c:73:33:49:35",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/leaf1b",
+        "clab-node-name": "leaf1b",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spine1": {
+      "index": "8",
+      "shortname": "spine1",
+      "longname": "clab-avdirb-spine1",
+      "fqdn": "spine1.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/spine1",
+      "kind": "ceos",
+      "image": "ceosimage:4.33.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.100.100.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::9",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "00:1c:73:05:66:ff",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/spine1",
+        "clab-node-name": "spine1",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "spine2": {
+      "index": "9",
+      "shortname": "spine2",
+      "longname": "clab-avdirb-spine2",
+      "fqdn": "spine2.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/spine2",
+      "kind": "ceos",
+      "image": "ceosimage:4.33.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.100.100.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::a",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "00:1c:73:c6:10:b6",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/spine2",
+        "clab-node-name": "spine2",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "svc2a": {
+      "index": "10",
+      "shortname": "svc2a",
+      "longname": "clab-avdirb-svc2a",
+      "fqdn": "svc2a.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/svc2a",
+      "kind": "ceos",
+      "image": "ceosimage:4.33.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.100.100.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::d",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "00:1c:73:a7:03:67",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/svc2a",
+        "clab-node-name": "svc2a",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    },
+    "svc2b": {
+      "index": "11",
+      "shortname": "svc2b",
+      "longname": "clab-avdirb-svc2b",
+      "fqdn": "svc2b.avdirb.io",
+      "group": "",
+      "labdir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/svc2b",
+      "kind": "ceos",
+      "image": "ceosimage:4.33.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.100.100.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "2001:172:100:100::6",
+      "mgmt-ipv6-prefix-length": 80,
+      "mac-address": "00:1c:73:b1:29:ff",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-636c0554bef3",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/clab-avdirb/svc2b",
+        "clab-node-name": "svc2b",
+        "clab-node-type": "",
+        "clab-owner": "shanesmacbook",
+        "clab-topo-file": "/home/shanesmacbook/avd-cEOS-Lab/labs/evpn/avd_sym_irb/topology.yaml",
+        "containerlab": "avdirb"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "leaf1a",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:fc:9f:75",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spine1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:b2:d7:c4",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1b",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:99:f6:d0",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spine1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:82:83:6f",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2a",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:d1:d8:f2",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spine1",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:7b:29:dd",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2b",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:04:51:e1",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spine1",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:81:82:98",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1a",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:18:30:f9",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spine2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:13:11:6a",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1b",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:8b:18:1b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spine2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:1c:d3:67",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2a",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:12:1b:0e",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spine2",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:b0:1d:aa",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2b",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:2e:09:ce",
+        "peer": "z"
+      },
+      "z": {
+        "node": "spine2",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:4f:22:f9",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1a",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:a9:6c:af",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf1b",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:19:fd:d2",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1a",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:84:f4:3e",
+        "peer": "z"
+      },
+      "z": {
+        "node": "leaf1b",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:66:d5:69",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2a",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:3c:96:20",
+        "peer": "z"
+      },
+      "z": {
+        "node": "svc2b",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:5a:ec:b3",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2a",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:9f:c9:7b",
+        "peer": "z"
+      },
+      "z": {
+        "node": "svc2b",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:91:78:80",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2a",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:ff:a7:a8",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l2leaf2a",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:a9:db:ce",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2a",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:ad:23:61",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l2leaf2b",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:0a:52:fc",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2b",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:62:6c:c0",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l2leaf2a",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:20:77:25",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "svc2b",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:ca:3b:ee",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l2leaf2b",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:2f:b3:c1",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l2leaf2a",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:e6:09:ae",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l2leaf2b",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:02:f9:8a",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l2leaf2a",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:ce:ad:92",
+        "peer": "z"
+      },
+      "z": {
+        "node": "l2leaf2b",
+        "interface": "eth4",
+        "mac": "aa:c1:ab:5b:5b:03",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1a",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:d2:08:10",
+        "peer": "z"
+      },
+      "z": {
+        "node": "client1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:b7:6b:e5",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1b",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:50:e3:45",
+        "peer": "z"
+      },
+      "z": {
+        "node": "client1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:c9:2a:0c",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1a",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:ea:4c:03",
+        "peer": "z"
+      },
+      "z": {
+        "node": "client2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:5e:0e:7a",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "leaf1b",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:ab:c8:79",
+        "peer": "z"
+      },
+      "z": {
+        "node": "client2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:56:70:be",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l2leaf2a",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:e9:00:69",
+        "peer": "z"
+      },
+      "z": {
+        "node": "client3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:62:8d:3b",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l2leaf2b",
+        "interface": "eth5",
+        "mac": "aa:c1:ab:c2:b1:98",
+        "peer": "z"
+      },
+      "z": {
+        "node": "client3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:5e:ea:79",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l2leaf2a",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:71:93:8f",
+        "peer": "z"
+      },
+      "z": {
+        "node": "client4",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:e9:79:c4",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "l2leaf2b",
+        "interface": "eth6",
+        "mac": "aa:c1:ab:6b:99:fa",
+        "peer": "z"
+      },
+      "z": {
+        "node": "client4",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:0b:30:b2",
+        "peer": "a"
+      }
+    }
+  ]
+}
