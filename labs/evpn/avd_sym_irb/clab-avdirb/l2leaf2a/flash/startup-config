@@ -1,9 +1,9 @@
-! Startup-config last modified at Mon Feb 17 20:24:54 2025 by root
+! Startup-config last modified at Mon Feb 17 23:38:13 2025 by root
 ! device: l2leaf2a (cEOSLab, EOS-4.33.1F-39308076.liffeyceoslabarm (engineering build))
 !
 no aaa root
 !
-username admin privilege 15 role network-admin secret sha512 $6$4j8rzfL.CRYcEoyh$dT95Pw7.AFKHHr4Hc.n6h.nim9l42ABrhyGZHxQEg4fNRqmiYRWCOZVwGKPeCQ91NvdA9otDJEyIBXnjVvZtf1
+username admin privilege 15 role network-admin secret sha512 $6$iscbt2FgyaINdy2v$X7.aM6GatFwxzWJbryKiPhkel6kSSfTkeO7JejrMCiXcayhBvZZg9lWgZMr0WHRecQ4GONu4mYJbHoNg8aViK0
 !
 management api http-commands
    protocol https ssl profile eAPI
@@ -49,7 +49,7 @@ interface Management0
    description oob_management
    vrf MGMT
    ip address 172.100.100.8/24
-   ipv6 address 2001:172:100:100::7/80
+   ipv6 address 2001:172:100:100::d/80
 !
 no ip routing
 no ip routing vrf MGMT

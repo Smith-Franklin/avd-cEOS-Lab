@@ -1,9 +1,9 @@
-! Startup-config last modified at Mon Feb 17 20:24:52 2025 by root
+! Startup-config last modified at Mon Feb 17 23:38:12 2025 by root
 ! device: spine1 (cEOSLab, EOS-4.33.1F-39308076.liffeyceoslabarm (engineering build))
 !
 no aaa root
 !
-username admin privilege 15 role network-admin secret sha512 $6$STcip5J/iCmYmXfk$sR3g8NZbW8zzs3YI9f7ct12Fj/uMH2yERRjkB2mPHsb4VX.zsV3b5VvOJ5U9uYM.chdE9yMiRUqJ7xIAostMM.
+username admin privilege 15 role network-admin secret sha512 $6$4DnWjtgqYAODt0sx$RuBjJ2kLkzniM6muOrzJ7XAm/.ItvosFOPZR2fuPzNoA0oNLLN8vA1siV79rrPBC/Sh0a/fC296qf5HYbRg0f0
 !
 management api http-commands
    protocol https ssl profile eAPI
@@ -45,7 +45,7 @@ interface Management0
    description oob_management
    vrf MGMT
    ip address 172.100.100.2/24
-   ipv6 address 2001:172:100:100::9/80
+   ipv6 address 2001:172:100:100::4/80
 !
 no ip routing
 no ip routing vrf MGMT
