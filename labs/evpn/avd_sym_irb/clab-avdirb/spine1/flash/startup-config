@@ -1,9 +1,9 @@
-! Startup-config last modified at Mon Feb 24 01:49:49 2025 by root
+! Startup-config last modified at Mon Feb 24 03:04:30 2025 by root
 ! device: spine1 (cEOSLab, EOS-4.33.1F-39308076.liffeyceoslabarm (engineering build))
 !
 no aaa root
 !
-username admin privilege 15 role network-admin secret sha512 $6$w7QR55dTZWFfQYyu$F42d/eWUHIoET4DLludbW3L78IK8dy45fTuyP9psJi0KRrBbIsKXCHjzE7kg0J.r1q5dNy1.Q1WsFF.bNYyl2/
+username admin privilege 15 role network-admin secret sha512 $6$0yeKP2YMw/yuZcw7$tUNtasg5uMSBsKtGW8ya2RmDVVn1jj8fksL3MN.OqbRdhHUS.HFSZmPuAPmvAnl7vy7j2WcZDXBO6qU51jy3e0
 !
 management api http-commands
    protocol https ssl profile eAPI
