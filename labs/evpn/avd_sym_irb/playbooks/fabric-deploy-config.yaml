@@ -23,4 +23,3 @@
       tags: [verify, never]
       import_role:
         name: arista.avd.eos_validate_state
-    
