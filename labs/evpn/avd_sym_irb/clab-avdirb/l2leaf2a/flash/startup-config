@@ -1,9 +1,9 @@
-! Startup-config last modified at Mon Feb 24 03:04:24 2025 by root
+! Startup-config last modified at Tue Feb 25 23:12:57 2025 by root
 ! device: l2leaf2a (cEOSLab, EOS-4.33.1F-39308076.liffeyceoslabarm (engineering build))
 !
 no aaa root
 !
-username admin privilege 15 role network-admin secret sha512 $6$Bnb56f6.9B75BHMP$W0XeEiFBeZh6gDLoQ0v/.1HyS2WulLlAiUOwvcEt5xNMwbQUKB0swGN3LYkOMuboFWpHsI9iqaG6MPhWgoTxQ/
+username admin privilege 15 role network-admin secret sha512 $6$vSmB8wP8oEFuSRGN$5JV0atwEVHUOSCxut1oxzO80XnoeGTb2dENyn89j3gFGsEcch7EEGNrE/JL/fAxQvG5zvWFJSyQ7NXSH94GOO/
 !
 management api http-commands
    protocol https ssl profile eAPI
